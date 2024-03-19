@@ -1,0 +1,29 @@
+import "./AboutMe.css";
+
+const AboutMe = () => {
+  return (
+    <div className="aboutMe">
+      <h1 className="title">Sobre mim</h1>
+      <p className="text">
+        Olá, sou <span>Guilherme Ligeski Saldanha</span>, um{" "}
+        <span>desenvolvedor web freelancer</span> de <span>19</span> anos de
+        idade. Atualmente, estou cursando o 5º período de{" "}
+        <span>Engenharia de Software</span> na UniBrasil, buscando
+        constantemente aprimorar minhas habilidades e conhecimentos nesta área.
+        <br />
+        Com foco em linguagens como <span>HTML</span>, <span>CSS</span>,{" "}
+        <span>JavaScript</span>, e frameworks como
+        <span>React.js</span> e <span>Node.js</span>, tenho desenvolvido uma
+        sólida experiência na criação de websites dinâmicos, responsivos e
+        intuitivos para atender às demandas dos meus clientes.
+        <br />
+        Estou ansioso para embarcar em minha primeira oportunidade de trabalho
+        em uma empresa, trazendo meu <span>entusiasmo</span> e{" "}
+        <span>comprometimento</span> para contribuir com o sucesso de sua
+        equipe.
+      </p>
+    </div>
+  );
+};
+
+export default AboutMe;

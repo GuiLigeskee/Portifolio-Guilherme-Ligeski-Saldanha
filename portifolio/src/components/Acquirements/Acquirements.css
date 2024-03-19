@@ -1,0 +1,12 @@
+.acquirements {
+  background-image: url("../../assets/wavey-fingerprint.svg");
+  background-size: cover;
+  background-position: center center;
+  color: #fafafa;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  padding: 3em 0 7em 0;
+  height: 93vh;
+}

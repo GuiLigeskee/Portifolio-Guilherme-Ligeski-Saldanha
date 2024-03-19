@@ -1,0 +1,24 @@
+.aboutMe {
+  height: 95vh;
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.title {
+  margin: 1em 0;
+  color: #73c883;
+}
+
+.text {
+  font-size: 1.2em;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.text span {
+  color: #73c883;
+}

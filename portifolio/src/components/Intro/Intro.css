@@ -1,0 +1,26 @@
+.intro {
+  background-image: url("../../assets/bullseye-gradient.svg");
+  background-size: cover;
+  background-position: center center;
+  color: #fafafa;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  padding: 3em 0 7em 0;
+  height: 93vh;
+}
+
+.title {
+  margin: 1em;
+}
+
+.profileImg {
+  width: 350px;
+  border-radius: 50%;
+  margin: 1em 0;
+}
+
+.intro p {
+  font-size: 1.2em;
+}
