@@ -9,3 +9,9 @@ body {
   font-family: "poppins";
   color: #fafafa;
 }
+
+.title {
+  text-align: center;
+  font-size: 3em;
+  color: #73c883;
+}

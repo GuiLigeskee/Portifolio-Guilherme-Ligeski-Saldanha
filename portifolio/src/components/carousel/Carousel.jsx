@@ -5,6 +5,18 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css/bundle";
 
+// Icons
+import JavaScript from "../../assets/javascript-logo.svg";
+import React from "../../assets/react-logo.svg";
+import Redux from "../../assets/redux-logo.svg";
+import Nodejs from "../../assets/nodejs-logo.svg";
+import Mongodb from "../../assets/mongodb-logo.svg";
+import Html from "../../assets/html-logo.svg";
+import Css from "../../assets/css-logo.svg";
+import CLogo from "../../assets/c-logo.svg";
+import Python from "../../assets/python-logo.svg";
+import Git from "../../assets/git-logo.svg";
+
 const Carousel = () => {
   return (
     <div className="carousel">
@@ -16,33 +28,37 @@ const Carousel = () => {
           disableOnInteraction: true,
         }}
         modules={[Autoplay]}
+        className="mySwiper"
       >
-        <SwiperSlide key={1}>
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
+        <SwiperSlide>
+          <img src={JavaScript} alt="javascript" />
         </SwiperSlide>
-        <SwiperSlide key={2}>
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" />
+        <SwiperSlide>
+          <img src={React} alt="react" />
         </SwiperSlide>
-        <SwiperSlide key={3}>
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redux/redux-original.svg" />
+        <SwiperSlide>
+          <img src={Redux} alt="redux" />
         </SwiperSlide>
-        <SwiperSlide key={4}>
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" />
+        <SwiperSlide>
+          <img src={Nodejs} alt="nodejs" />
         </SwiperSlide>
-        <SwiperSlide key={5}>
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg" />
+        <SwiperSlide>
+          <img src={Mongodb} alt="mongodb" />
         </SwiperSlide>
-        <SwiperSlide key={6}>
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg" />
+        <SwiperSlide>
+          <img src={Git} alt="git" />
         </SwiperSlide>
-        <SwiperSlide key={7}>
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg" />
+        <SwiperSlide>
+          <img src={Html} alt="html" />
         </SwiperSlide>
-        <SwiperSlide key={8}>
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" />
+        <SwiperSlide>
+          <img src={Css} alt="css" />
         </SwiperSlide>
-        <SwiperSlide key={9}>
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" />
+        <SwiperSlide>
+          <img src={CLogo} alt="c" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={Python} alt="python" />
         </SwiperSlide>
       </Swiper>
     </div>

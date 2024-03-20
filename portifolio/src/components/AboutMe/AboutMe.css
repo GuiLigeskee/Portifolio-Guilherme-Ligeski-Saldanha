@@ -8,11 +8,6 @@
   flex-direction: column;
 }
 
-.title {
-  margin: 1em 0;
-  color: #73c883;
-}
-
 .text {
   font-size: 1.2em;
   letter-spacing: 1px;

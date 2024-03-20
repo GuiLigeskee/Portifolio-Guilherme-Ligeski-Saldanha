@@ -1,6 +1,6 @@
 import "./Acquirements.css";
 
-import Carousel from "../carousel/Carousel";
+import Carousel from "../carousel/Carousel.jsx";
 
 const Acquirements = () => {
   return (
