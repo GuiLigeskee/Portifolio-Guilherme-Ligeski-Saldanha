@@ -1,7 +1,6 @@
 .carousel {
-  position: relative;
-  margin: 2em auto;
-  max-width: 80%;
+  margin: 3em auto;
+  width: 80%;
 }
 
 .carousel img {

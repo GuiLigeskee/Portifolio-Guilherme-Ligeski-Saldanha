@@ -1,9 +1,13 @@
 .aboutMe {
   height: 95vh;
-  width: 50%;
+  width: 80%;
   margin: 0 auto;
+  padding: 2em 0;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   flex-direction: column;
+}
+.aboutMe h1 {
+  margin-bottom: 0.5em;
 }
