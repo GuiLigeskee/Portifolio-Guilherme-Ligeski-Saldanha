@@ -7,13 +7,3 @@
   align-items: center;
   flex-direction: column;
 }
-
-.text {
-  font-size: 1.2em;
-  letter-spacing: 1px;
-  text-align: center;
-}
-
-.text span {
-  color: #73c883;
-}

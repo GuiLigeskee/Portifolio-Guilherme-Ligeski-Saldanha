@@ -15,3 +15,14 @@ body {
   font-size: 3em;
   color: #73c883;
 }
+
+.text {
+  font-size: 1.2em;
+  letter-spacing: 1px;
+  text-align: center;
+  width: 80%;
+}
+
+.text span {
+  color: #73c883;
+}

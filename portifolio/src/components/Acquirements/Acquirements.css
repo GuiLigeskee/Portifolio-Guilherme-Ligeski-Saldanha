@@ -3,6 +3,10 @@
   background-size: cover;
   background-position: center center;
   color: #fafafa;
-  padding: 3em 0 7em 0;
+  padding: 3em 0;
   height: 93vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
 }
