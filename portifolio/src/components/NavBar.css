@@ -7,6 +7,7 @@
   background-color: #070707;
   color: #fafafa;
   padding: 1em 2em;
+  z-index: 9999;
   transition: 0.3s;
 }
 
@@ -47,6 +48,12 @@
     font-size: 1.5em;
   }
 
+  .navBarOptions {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 860px) {
   .navBarOptions {
     display: none;
   }
