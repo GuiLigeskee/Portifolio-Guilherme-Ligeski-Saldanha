@@ -56,6 +56,11 @@ li img {
   height: auto;
 }
 
+#buttons {
+  display: flex;
+  text-align: center;
+}
+
 #project-link {
   display: inline-block;
   text-decoration: none;
@@ -69,4 +74,23 @@ li img {
 
 #project-link:hover {
   background-color: #73c883;
+}
+
+@media screen and (max-width: 768px) {
+  .projects {
+    width: 100%;
+    margin: 0;
+    border: none;
+    padding: 2em;
+  }
+
+  .project {
+    width: 95%;
+    padding: 1em;
+    flex-wrap: wrap;
+  }
+
+  #project-img {
+    width: 100%;
+  }
 }

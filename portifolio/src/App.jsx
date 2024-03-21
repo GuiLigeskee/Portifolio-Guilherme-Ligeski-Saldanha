@@ -12,9 +12,13 @@ function App() {
       <NavBar />
       <div className="container">
         <Intro />
+        <br />
         <AboutMe />
+        <br />
         <Acquirements />
+        <br />
         <Projects />
+        <br />
         <Contact />
       </div>
     </>

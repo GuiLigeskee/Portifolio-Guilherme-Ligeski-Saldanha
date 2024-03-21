@@ -15,7 +15,7 @@ import MongodbLogo from "../../assets/mongodb-logo.svg";
 
 const Projects = () => {
   return (
-    <div className="projects">
+    <div className="projects" id="projects">
       <h1 className="title">Principais projetos</h1>
       <div className="project">
         <img id="project-img" src={CasaLuz} alt="CasaLuz Project" />
@@ -134,21 +134,23 @@ const Projects = () => {
               </li>
             </ul>
           </label>
-          <a
-            id="project-link"
-            href="https://github.com/GuiLigeskee/Adivinhe-a-palavra"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Repositório GitHub
-          </a>
-          <a
-            id="project-link"
-            href="https://GuiLigeskee.github.io/adivinhe-a-palavra"
-            target="_blank"
-          >
-            Site
-          </a>
+          <div id="buttons">
+            <a
+              id="project-link"
+              href="https://github.com/GuiLigeskee/Adivinhe-a-palavra"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Repositório GitHub
+            </a>
+            <a
+              id="project-link"
+              href="https://GuiLigeskee.github.io/adivinhe-a-palavra"
+              target="_blank"
+            >
+              Site
+            </a>
+          </div>
         </div>
       </div>
     </div>

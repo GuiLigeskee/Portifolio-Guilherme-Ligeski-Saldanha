@@ -4,7 +4,7 @@ import Carousel from "../carousel/Carousel.jsx";
 
 const Acquirements = () => {
   return (
-    <div className="acquirements">
+    <div className="acquirements" id="acquirements">
       <h1 className="title">Conhecimentos</h1>
       <Carousel />
       <p className="text">

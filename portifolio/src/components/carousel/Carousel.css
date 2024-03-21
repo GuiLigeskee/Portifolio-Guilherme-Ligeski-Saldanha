@@ -10,3 +10,16 @@
 .mySwiper {
   width: 80%;
 }
+
+@media screen and (max-width: 768px) {
+  .carousel {
+    width: 100%;
+    margin: 0;
+    border: none;
+    padding: 2em;
+  }
+
+  .mySwiper {
+    width: 100%;
+  }
+}

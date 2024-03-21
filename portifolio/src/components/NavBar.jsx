@@ -4,14 +4,24 @@ const NavBar = () => {
     <div>
       <nav className="navBar">
         <div className="navBarLeft">
-          <h1 className="navBarLogo">Guilherme L. Saldanha</h1>
+          <h1 className="navBarLogo">
+            <a href="#intro">Guilherme L. Saldanha</a>
+          </h1>
         </div>
         <div className="navBarRight">
           <ul className="navBarOptions">
-            <li className="navBarOption">Sobre mim</li>
-            <li className="navBarOption">Conhecimentos</li>
-            <li className="navBarOption">Projetos</li>
-            <li className="navBarOption">Contato</li>
+            <li className="navBarOption">
+              <a href="#aboutMe">Sobre mim</a>
+            </li>
+            <li className="navBarOption">
+              <a href="#acquirements">Conhecimentos</a>
+            </li>
+            <li className="navBarOption">
+              <a href="#projects">Projetos</a>
+            </li>
+            <li className="navBarOption">
+              <a href="#contact">Contato</a>
+            </li>
           </ul>
         </div>
       </nav>

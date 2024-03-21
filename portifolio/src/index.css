@@ -10,10 +10,19 @@ body {
   color: #fafafa;
 }
 
+a {
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 .title {
   text-align: center;
   font-size: 3em;
   color: #73c883;
+  margin-top: 2em;
 }
 
 .text {
@@ -25,4 +34,14 @@ body {
 
 .text span {
   color: #73c883;
+}
+
+@media screen and (max-width: 768px) {
+  .title {
+    font-size: 2em;
+  }
+
+  .text {
+    width: 97%;
+  }
 }
