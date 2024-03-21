@@ -1,0 +1,72 @@
+.projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  padding: 2em 0;
+}
+
+.project {
+  display: flex;
+  align-items: center;
+  border: 1px solid #fafafa;
+  border-radius: 15px;
+  padding: 1em;
+  width: 50%;
+}
+
+#project-img {
+  width: 350px;
+  height: auto;
+  margin-right: 20px;
+  border-radius: 15px;
+}
+
+.project-info {
+  flex-grow: 1;
+}
+
+#project-title {
+  font-size: 1.5em;
+  color: #73c883;
+}
+
+label {
+  margin: 0.2em;
+}
+
+label span {
+  font-size: 0.8em;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0.2em 0.4em;
+  display: flex;
+}
+
+li {
+  margin: 0 0.4em;
+}
+
+li img {
+  width: 30px; /* Ajuste o tamanho do ícone conforme necessário */
+  height: auto;
+}
+
+#project-link {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  background-color: #73c883d7;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-right: 1em;
+}
+
+#project-link:hover {
+  background-color: #73c883;
+}
