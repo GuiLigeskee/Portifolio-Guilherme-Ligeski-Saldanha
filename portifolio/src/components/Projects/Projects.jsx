@@ -56,7 +56,7 @@ const Projects = () => {
             href="https://www.casaluzimoveis.com"
             target="_blank"
           >
-            Visitar Site
+            Site
           </a>
         </div>
       </div>
@@ -156,7 +156,7 @@ const Projects = () => {
             href="https://lista-de-tarefas-l0femi5hw-guiligeskees-projects.vercel.app"
             target="_blank"
           >
-            Visitar Site
+            Site
           </a>
         </div>
       </div>

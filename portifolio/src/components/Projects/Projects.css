@@ -10,7 +10,7 @@
 .project {
   display: flex;
   align-items: center;
-  border: 1px solid #fafafa;
+  background-color: #141414;
   border-radius: 15px;
   padding: 1em;
   width: 50%;
