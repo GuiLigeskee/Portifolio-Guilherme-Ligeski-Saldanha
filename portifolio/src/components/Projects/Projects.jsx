@@ -5,6 +5,7 @@ import CasaLuz from "../../assets/CasaLuz.webp";
 import Mademape from "../../assets/MademapeStore.webp";
 import GreenSocial from "../../assets/GreenSocial.webp";
 import AdivinheAPalavra from "../../assets/AdivinheAPalavra.webp";
+import ListaDeTarefas from "../../assets/ListaDeTarefas.webp";
 
 // Icons
 import JavaScript from "../../assets/javascript-logo.svg";
@@ -12,6 +13,7 @@ import ReactLogo from "../../assets/react-logo.svg";
 import ReduxLogo from "../../assets/redux-logo.svg";
 import NodejsLogo from "../../assets/nodejs-logo.svg";
 import MongodbLogo from "../../assets/mongodb-logo.svg";
+import TypeScript from "../../assets/typescript.svg";
 
 const Projects = () => {
   return (
@@ -48,6 +50,13 @@ const Projects = () => {
             rel="noopener noreferrer"
           >
             Repositório GitHub
+          </a>
+          <a
+            id="project-link"
+            href="https://www.casaluzimoveis.com"
+            target="_blank"
+          >
+            Visitar Site
           </a>
         </div>
       </div>
@@ -116,6 +125,38 @@ const Projects = () => {
             rel="noopener noreferrer"
           >
             Repositório GitHub
+          </a>
+        </div>
+      </div>
+      <div className="project">
+        <img id="project-img" src={ListaDeTarefas} alt="CasaLuz Project" />
+        <div className="project-info">
+          <h3 id="project-title">Projeto pessoal Lista de tarefas</h3>
+          <label>
+            <span>Tecnologias utilizadas no projeto:</span>
+            <ul>
+              <li>
+                <img src={TypeScript} alt="TypeScript Logo" />
+              </li>
+              <li>
+                <img src={ReactLogo} alt="React Logo" />
+              </li>
+            </ul>
+          </label>
+          <a
+            id="project-link"
+            href="https://github.com/GuiLigeskee/Lista-de-tarefas"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Repositório GitHub
+          </a>
+          <a
+            id="project-link"
+            href="https://lista-de-tarefas-l0femi5hw-guiligeskees-projects.vercel.app"
+            target="_blank"
+          >
+            Visitar Site
           </a>
         </div>
       </div>

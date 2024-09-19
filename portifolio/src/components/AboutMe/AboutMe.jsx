@@ -7,7 +7,7 @@ const AboutMe = () => {
       <p className="text">
         Olá, sou <span>Guilherme Ligeski Saldanha</span>, um{" "}
         <span>desenvolvedor web freelancer</span> de <span>19</span> anos de
-        idade. Atualmente, estou cursando o 5º período de{" "}
+        idade. Atualmente, estou cursando o 6º período de{" "}
         <span>Engenharia de Software</span> na UniBrasil, buscando
         constantemente aprimorar minhas habilidades e conhecimentos nesta área.
         <br />

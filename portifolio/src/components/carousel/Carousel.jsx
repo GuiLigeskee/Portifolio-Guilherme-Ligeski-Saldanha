@@ -6,6 +6,7 @@ import { Autoplay } from "swiper/modules";
 import "swiper/css/bundle";
 
 // Icons
+import TypeScript from "../../assets/typescript.svg";
 import JavaScript from "../../assets/javascript-logo.svg";
 import React from "../../assets/react-logo.svg";
 import Redux from "../../assets/redux-logo.svg";
@@ -30,6 +31,9 @@ const Carousel = () => {
         modules={[Autoplay]}
         className="mySwiper"
       >
+        <SwiperSlide>
+          <img src={TypeScript} alt="typescript" />
+        </SwiperSlide>
         <SwiperSlide>
           <img src={JavaScript} alt="javascript" />
         </SwiperSlide>

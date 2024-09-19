@@ -4,6 +4,7 @@
 }
 
 .carousel img {
+  max-width: 90%;
   width: auto;
 }
 

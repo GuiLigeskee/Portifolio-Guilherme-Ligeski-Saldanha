@@ -9,7 +9,7 @@ import Github from "../../assets/github.svg";
 const Contact = () => {
   return (
     <div className="contact" id="contact">
-      <h2 className="contact-title">Meus contatos</h2>
+      <h2 className="contact-title">Entre em contato!</h2>
       <div className="card">
         <a
           className="social-link1"
