@@ -6,6 +6,7 @@ import Mademape from "../../assets/MademapeStore.webp";
 import GreenSocial from "../../assets/GreenSocial.webp";
 import AdivinheAPalavra from "../../assets/AdivinheAPalavra.webp";
 import ListaDeTarefas from "../../assets/ListaDeTarefas.webp";
+import CineReview from "../../assets/CineReview.webp";
 
 // Icons
 import JavaScript from "../../assets/javascript-logo.svg";
@@ -125,6 +126,38 @@ const Projects = () => {
             rel="noopener noreferrer"
           >
             Repositório GitHub
+          </a>
+        </div>
+      </div>
+      <div className="project">
+        <img id="project-img" src={CineReview} alt="CineReview Project" />
+        <div className="project-info">
+          <h3 id="project-title">Projeto pessoal CineReview</h3>
+          <label>
+            <span>Tecnologias utilizadas no projeto:</span>
+            <ul>
+              <li>
+                <img src={JavaScript} alt="JavaScript Logo" />
+              </li>
+              <li>
+                <img src={ReactLogo} alt="React Logo" />
+              </li>
+            </ul>
+          </label>
+          <a
+            id="project-link"
+            href="https://github.com/GuiLigeskee/Lista-de-tarefas"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Repositório GitHub
+          </a>
+          <a
+            id="project-link"
+            href="https://cinereview-outdvz8i2-guiligeskees-projects.vercel.app/#/"
+            target="_blank"
+          >
+            Site
           </a>
         </div>
       </div>
