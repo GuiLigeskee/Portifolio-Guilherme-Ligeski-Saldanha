@@ -12,6 +12,12 @@
   width: 80%;
 }
 
+.SwiperSlide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 @media screen and (max-width: 768px) {
   .carousel {
     width: 100%;

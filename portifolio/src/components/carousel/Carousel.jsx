@@ -17,6 +17,11 @@ import Css from "../../assets/css-logo.svg";
 import CLogo from "../../assets/c-logo.svg";
 import Python from "../../assets/python-logo.svg";
 import Git from "../../assets/git-logo.svg";
+import Mysql from "../../assets/MySQL.svg";
+import Express from "../../assets/Express.svg";
+import GCP from "../../assets/GoogleCloud.svg";
+import Postman from "../../assets/Postman.svg";
+import WordPress from "../../assets/WordPress.svg";
 
 const Carousel = () => {
   return (
@@ -33,36 +38,67 @@ const Carousel = () => {
       >
         <SwiperSlide>
           <img src={TypeScript} alt="typescript" />
+          <p>TypeScript</p>
         </SwiperSlide>
         <SwiperSlide>
           <img src={JavaScript} alt="javascript" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={React} alt="react" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={Redux} alt="redux" />
+          <p>JavaScript</p>
         </SwiperSlide>
         <SwiperSlide>
           <img src={Nodejs} alt="nodejs" />
+          <p>Node</p>
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={React} alt="react" />
+          <p>React</p>
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={Redux} alt="redux" />
+          <p>Redux</p>
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={Express} alt="express" />
+          <p>express</p>
         </SwiperSlide>
         <SwiperSlide>
           <img src={Mongodb} alt="mongodb" />
+          <p>Mongo DB</p>
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={Mysql} alt="mysql" />
+          <p>MySQL</p>
         </SwiperSlide>
         <SwiperSlide>
           <img src={Git} alt="git" />
+          <p>Git</p>
         </SwiperSlide>
         <SwiperSlide>
           <img src={Html} alt="html" />
+          <p>HTML</p>
         </SwiperSlide>
         <SwiperSlide>
           <img src={Css} alt="css" />
+          <p>CSS</p>
         </SwiperSlide>
         <SwiperSlide>
           <img src={CLogo} alt="c" />
+          <p>C</p>
         </SwiperSlide>
         <SwiperSlide>
           <img src={Python} alt="python" />
+          <p>Python</p>
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={GCP} alt="GoogleCloud" />
+          <p>GoogleCloud</p>
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={Postman} alt="postman" />
+          <p>Postman</p>
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={WordPress} alt="wordPress" />
+          <p>WordPress</p>
         </SwiperSlide>
       </Swiper>
     </div>

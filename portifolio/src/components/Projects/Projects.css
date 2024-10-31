@@ -1,13 +1,12 @@
 .projects {
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-items: center;
-  gap: 1em;
-  padding: 2em 0;
+  flex-wrap: wrap;
+  width: 60%;
+  margin: 0 auto;
 }
 
-.project {
+/* .project {
   display: flex;
   align-items: center;
   background-color: #141414;
@@ -52,7 +51,7 @@ li {
 }
 
 li img {
-  width: 30px; /* Ajuste o tamanho do ícone conforme necessário */
+  width: 30px; 
   height: auto;
 }
 
@@ -75,6 +74,7 @@ li img {
 #project-link:hover {
   background-color: #73c883;
 }
+  */
 
 @media screen and (max-width: 768px) {
   .projects {
@@ -82,15 +82,5 @@ li img {
     margin: 0;
     border: none;
     padding: 2em;
-  }
-
-  .project {
-    width: 95%;
-    padding: 1em;
-    flex-wrap: wrap;
-  }
-
-  #project-img {
-    width: 100%;
   }
 }

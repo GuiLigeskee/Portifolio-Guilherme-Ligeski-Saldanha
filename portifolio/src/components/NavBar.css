@@ -17,6 +17,8 @@
 
 .navBarRight {
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .navBarOptions {

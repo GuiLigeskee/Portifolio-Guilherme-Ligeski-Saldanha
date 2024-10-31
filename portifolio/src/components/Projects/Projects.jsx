@@ -1,4 +1,7 @@
+// Projects.js
+import React from "react";
 import "./Projects.css";
+import ProjectCard from "../ProjectCard/ProjectCard";
 
 // img projects
 import CasaLuz from "../../assets/CasaLuz.webp";
@@ -7,6 +10,7 @@ import GreenSocial from "../../assets/GreenSocial.webp";
 import AdivinheAPalavra from "../../assets/AdivinheAPalavra.webp";
 import ListaDeTarefas from "../../assets/ListaDeTarefas.webp";
 import CineReview from "../../assets/CineReview.webp";
+import Accounts from "../../assets/accounts.webp";
 
 // Icons
 import JavaScript from "../../assets/javascript-logo.svg";
@@ -16,218 +20,104 @@ import NodejsLogo from "../../assets/nodejs-logo.svg";
 import MongodbLogo from "../../assets/mongodb-logo.svg";
 import TypeScript from "../../assets/typescript.svg";
 
+const projectsData = [
+  {
+    imgSrc: CasaLuz,
+    title: "Projeto freelancer CasaLuz",
+    technologies: [
+      { logo: JavaScript, name: "JavaScript" },
+      { logo: ReactLogo, name: "React" },
+      { logo: ReduxLogo, name: "Redux" },
+      { logo: NodejsLogo, name: "Node.js" },
+      { logo: MongodbLogo, name: "MongoDB" },
+    ],
+    githubLink: "https://github.com/GuiLigeskee/CasaLuz",
+    siteLink: "https://www.casaluzimoveis.com",
+  },
+  {
+    imgSrc: Mademape,
+    title: "Projeto freelancer Mademape",
+    technologies: [
+      { logo: JavaScript, name: "JavaScript" },
+      { logo: ReactLogo, name: "React" },
+      { logo: ReduxLogo, name: "Redux" },
+      { logo: NodejsLogo, name: "Node.js" },
+      { logo: MongodbLogo, name: "MongoDB" },
+    ],
+    githubLink: "https://github.com/GuiLigeskee/MademapeStore",
+  },
+  {
+    imgSrc: GreenSocial,
+    title: "Projeto pessoal GreenSocial",
+    technologies: [
+      { logo: JavaScript, name: "JavaScript" },
+      { logo: ReactLogo, name: "React" },
+      { logo: ReduxLogo, name: "Redux" },
+      { logo: NodejsLogo, name: "Node.js" },
+      { logo: MongodbLogo, name: "MongoDB" },
+    ],
+    githubLink: "https://github.com/GuiLigeskee/MademapeStore",
+  },
+  {
+    imgSrc: CineReview,
+    title: "Projeto pessoal CineReview",
+    technologies: [
+      { logo: JavaScript, name: "JavaScript" },
+      { logo: ReactLogo, name: "React" },
+    ],
+    githubLink: "https://github.com/GuiLigeskee/Lista-de-tarefas",
+    siteLink:
+      "https://cinereview-outdvz8i2-guiligeskees-projects.vercel.app/#/",
+  },
+  {
+    imgSrc: ListaDeTarefas,
+    title: "Projeto pessoal Lista de tarefas",
+    technologies: [
+      { logo: TypeScript, name: "TypeScript" },
+      { logo: ReactLogo, name: "React" },
+    ],
+    githubLink: "https://github.com/GuiLigeskee/Lista-de-tarefas",
+    siteLink:
+      "https://lista-de-tarefas-l0femi5hw-guiligeskees-projects.vercel.app",
+  },
+  {
+    imgSrc: AdivinheAPalavra,
+    title: "Projeto pessoal Adivinhe a palavra",
+    technologies: [
+      { logo: JavaScript, name: "JavaScript" },
+      { logo: ReactLogo, name: "React" },
+    ],
+    githubLink: "https://github.com/GuiLigeskee/Adivinhe-a-palavra",
+    siteLink: "https://GuiLigeskee.github.io/adivinhe-a-palavra",
+  },
+  {
+    imgSrc: Accounts,
+    title: "Projeto pessoal Accounts",
+    technologies: [
+      { logo: JavaScript, name: "JavaScript" },
+      { logo: NodejsLogo, name: "React" },
+    ],
+    githubLink: "https://github.com/GuiLigeskee/Accounts-CLI",
+  },
+];
+
 const Projects = () => {
   return (
-    <div className="projects" id="projects">
+    <>
       <h1 className="title">Principais projetos</h1>
-      <div className="project">
-        <img id="project-img" src={CasaLuz} alt="CasaLuz Project" />
-        <div className="project-info">
-          <h3 id="project-title">Projeto freelancer CasaLuz</h3>
-          <label>
-            <span>Tecnologias utilizadas no projeto:</span>
-            <ul>
-              <li>
-                <img src={JavaScript} alt="JavaScript Logo" />
-              </li>
-              <li>
-                <img src={ReactLogo} alt="React Logo" />
-              </li>
-              <li>
-                <img src={ReduxLogo} alt="Redux Logo" />
-              </li>
-              <li>
-                <img src={NodejsLogo} alt="Node.js Logo" />
-              </li>
-              <li>
-                <img src={MongodbLogo} alt="MongoDB Logo" />
-              </li>
-            </ul>
-          </label>
-          <a
-            id="project-link"
-            href="https://github.com/GuiLigeskee/CasaLuz"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Repositório GitHub
-          </a>
-          <a
-            id="project-link"
-            href="https://www.casaluzimoveis.com"
-            target="_blank"
-          >
-            Site
-          </a>
-        </div>
+      <div className="projects" id="projects">
+        {projectsData.map((project, index) => (
+          <ProjectCard
+            key={index}
+            imgSrc={project.imgSrc}
+            title={project.title}
+            technologies={project.technologies}
+            githubLink={project.githubLink}
+            siteLink={project.siteLink}
+          />
+        ))}
       </div>
-      <div className="project">
-        <img id="project-img" src={Mademape} alt="CasaLuz Project" />
-        <div className="project-info">
-          <h3 id="project-title">Projeto freelancer Mademape</h3>
-          <label>
-            <span>Tecnologias utilizadas no projeto:</span>
-            <ul>
-              <li>
-                <img src={JavaScript} alt="JavaScript Logo" />
-              </li>
-              <li>
-                <img src={ReactLogo} alt="React Logo" />
-              </li>
-              <li>
-                <img src={ReduxLogo} alt="Redux Logo" />
-              </li>
-              <li>
-                <img src={NodejsLogo} alt="Node.js Logo" />
-              </li>
-              <li>
-                <img src={MongodbLogo} alt="MongoDB Logo" />
-              </li>
-            </ul>
-          </label>
-          <a
-            id="project-link"
-            href="https://github.com/GuiLigeskee/MademapeStore"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Repositório GitHub
-          </a>
-        </div>
-      </div>
-      <div className="project">
-        <img id="project-img" src={GreenSocial} alt="CasaLuz Project" />
-        <div className="project-info">
-          <h3 id="project-title">Projeto pessoal GreenSocial</h3>
-          <label>
-            <span>Tecnologias utilizadas no projeto:</span>
-            <ul>
-              <li>
-                <img src={JavaScript} alt="JavaScript Logo" />
-              </li>
-              <li>
-                <img src={ReactLogo} alt="React Logo" />
-              </li>
-              <li>
-                <img src={ReduxLogo} alt="Redux Logo" />
-              </li>
-              <li>
-                <img src={NodejsLogo} alt="Node.js Logo" />
-              </li>
-              <li>
-                <img src={MongodbLogo} alt="MongoDB Logo" />
-              </li>
-            </ul>
-          </label>
-          <a
-            id="project-link"
-            href="https://github.com/GuiLigeskee/MademapeStore"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Repositório GitHub
-          </a>
-        </div>
-      </div>
-      <div className="project">
-        <img id="project-img" src={CineReview} alt="CineReview Project" />
-        <div className="project-info">
-          <h3 id="project-title">Projeto pessoal CineReview</h3>
-          <label>
-            <span>Tecnologias utilizadas no projeto:</span>
-            <ul>
-              <li>
-                <img src={JavaScript} alt="JavaScript Logo" />
-              </li>
-              <li>
-                <img src={ReactLogo} alt="React Logo" />
-              </li>
-            </ul>
-          </label>
-          <a
-            id="project-link"
-            href="https://github.com/GuiLigeskee/Lista-de-tarefas"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Repositório GitHub
-          </a>
-          <a
-            id="project-link"
-            href="https://cinereview-outdvz8i2-guiligeskees-projects.vercel.app/#/"
-            target="_blank"
-          >
-            Site
-          </a>
-        </div>
-      </div>
-      <div className="project">
-        <img id="project-img" src={ListaDeTarefas} alt="CasaLuz Project" />
-        <div className="project-info">
-          <h3 id="project-title">Projeto pessoal Lista de tarefas</h3>
-          <label>
-            <span>Tecnologias utilizadas no projeto:</span>
-            <ul>
-              <li>
-                <img src={TypeScript} alt="TypeScript Logo" />
-              </li>
-              <li>
-                <img src={ReactLogo} alt="React Logo" />
-              </li>
-            </ul>
-          </label>
-          <a
-            id="project-link"
-            href="https://github.com/GuiLigeskee/Lista-de-tarefas"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Repositório GitHub
-          </a>
-          <a
-            id="project-link"
-            href="https://lista-de-tarefas-l0femi5hw-guiligeskees-projects.vercel.app"
-            target="_blank"
-          >
-            Site
-          </a>
-        </div>
-      </div>
-      <div className="project">
-        <img id="project-img" src={AdivinheAPalavra} alt="CasaLuz Project" />
-        <div className="project-info">
-          <h3 id="project-title">Projeto pessoal Adivinhe a palavra</h3>
-          <label>
-            <span>Tecnologias utilizadas no projeto:</span>
-            <ul>
-              <li>
-                <img src={JavaScript} alt="JavaScript Logo" />
-              </li>
-              <li>
-                <img src={ReactLogo} alt="React Logo" />
-              </li>
-            </ul>
-          </label>
-          <div id="buttons">
-            <a
-              id="project-link"
-              href="https://github.com/GuiLigeskee/Adivinhe-a-palavra"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Repositório GitHub
-            </a>
-            <a
-              id="project-link"
-              href="https://GuiLigeskee.github.io/adivinhe-a-palavra"
-              target="_blank"
-            >
-              Site
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
+    </>
   );
 };
 
