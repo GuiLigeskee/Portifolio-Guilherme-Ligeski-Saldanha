@@ -6,6 +6,11 @@
 .carousel img {
   max-width: 90%;
   width: auto;
+  margin: 0 auto;
+}
+
+.carousel p {
+  margin: 0 1em;
 }
 
 .mySwiper {

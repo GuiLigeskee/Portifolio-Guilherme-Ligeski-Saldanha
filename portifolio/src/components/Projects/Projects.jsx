@@ -67,7 +67,7 @@ const projectsData = [
     ],
     githubLink: "https://github.com/GuiLigeskee/Lista-de-tarefas",
     siteLink:
-      "https://cinereview-outdvz8i2-guiligeskees-projects.vercel.app/#/",
+      "https://cinereview-guiligeskee-guiligeskees-projects.vercel.app/?_vercel_share=uFJrgDCVAsopRO1E20S1WKirpWFfiacu",
   },
   {
     imgSrc: ListaDeTarefas,

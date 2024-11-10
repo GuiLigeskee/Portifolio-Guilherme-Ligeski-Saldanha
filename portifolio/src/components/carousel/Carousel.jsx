@@ -46,7 +46,7 @@ const Carousel = () => {
         </SwiperSlide>
         <SwiperSlide>
           <img src={Nodejs} alt="nodejs" />
-          <p>Node</p>
+          <p>Node.js</p>
         </SwiperSlide>
         <SwiperSlide>
           <img src={React} alt="react" />
