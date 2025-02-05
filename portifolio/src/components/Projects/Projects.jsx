@@ -1,5 +1,5 @@
-// Projects.js
-import React from "react";
+import React, { useState } from "react";
+import Select from "react-select";
 import "./Projects.css";
 import ProjectCard from "../ProjectCard/ProjectCard";
 
@@ -19,6 +19,15 @@ import ReduxLogo from "../../assets/redux-logo.svg";
 import NodejsLogo from "../../assets/nodejs-logo.svg";
 import MongodbLogo from "../../assets/mongodb-logo.svg";
 import TypeScript from "../../assets/typescript.svg";
+
+const options = [
+  { value: "JavaScript", label: "JavaScript" },
+  { value: "TypeScript", label: "TypeScript" },
+  { value: "React", label: "React" },
+  { value: "Redux", label: "Redux" },
+  { value: "Node.js", label: "Node.js" },
+  { value: "MongoDB", label: "MongoDB" },
+];
 
 const projectsData = [
   {
@@ -95,27 +104,55 @@ const projectsData = [
     title: "Projeto pessoal Accounts",
     technologies: [
       { logo: JavaScript, name: "JavaScript" },
-      { logo: NodejsLogo, name: "React" },
+      { logo: NodejsLogo, name: "Node.js" },
     ],
     githubLink: "https://github.com/GuiLigeskee/Accounts-CLI",
   },
 ];
 
 const Projects = () => {
+  const [selectedLanguages, setSelectedLanguages] = useState([]);
+
+  // Filtragem dos projetos
+  const filteredProjects =
+    selectedLanguages.length === 0
+      ? projectsData
+      : projectsData.filter((project) =>
+          selectedLanguages.every((lang) =>
+            project.technologies.some((tech) => tech.name === lang.value)
+          )
+        );
+
   return (
     <>
       <h1 className="title">Principais projetos</h1>
+
+      {/* Filtro */}
+      <div className="filter-container">
+        <Select
+          options={options}
+          isMulti
+          onChange={setSelectedLanguages}
+          placeholder="Filtrar por linguagens..."
+        />
+      </div>
+
+      {/* Exibição dos projetos filtrados */}
       <div className="projects" id="projects">
-        {projectsData.map((project, index) => (
-          <ProjectCard
-            key={index}
-            imgSrc={project.imgSrc}
-            title={project.title}
-            technologies={project.technologies}
-            githubLink={project.githubLink}
-            siteLink={project.siteLink}
-          />
-        ))}
+        {filteredProjects.length > 0 ? (
+          filteredProjects.map((project, index) => (
+            <ProjectCard
+              key={index}
+              imgSrc={project.imgSrc}
+              title={project.title}
+              technologies={project.technologies}
+              githubLink={project.githubLink}
+              siteLink={project.siteLink}
+            />
+          ))
+        ) : (
+          <p className="no-results">Nenhum projeto encontrado.</p>
+        )}
       </div>
     </>
   );
