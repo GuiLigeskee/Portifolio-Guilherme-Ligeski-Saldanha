@@ -1,11 +1,79 @@
 .acquirements {
-  background-size: cover;
-  background-position: center center;
-  color: #fafafa;
-  padding: 3em 0;
-  height: 93vh;
+  text-align: center;
+  background-color: #0a0a0a;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 90vh;
+}
+
+.title {
+  font-size: 2rem;
+}
+
+.skills-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.skill-category {
+  text-align: center;
+  background: #2c2c2c;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  transition: 0.3s;
+}
+
+.skill-category:hover {
+  transform: scale(1.05);
+}
+
+.skill-category h2 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+}
+
+.skill-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.skill-item {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
   align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 90px; /* Mantém um tamanho fixo para alinhamento */
+}
+
+.icon {
+  font-size: 45px; /* Define um tamanho fixo para os ícones */
+  color: #bbb;
+  transition: 0.3s;
+}
+
+.skill-item p {
+  font-size: 0.9rem;
+  text-align: center;
+  font-weight: bold;
+  width: 100%;
+}
+
+.icon:hover {
+  color: #007bff; /* Destaque azul ao passar o mouse */
+  transform: scale(1.1);
 }

@@ -1,0 +1,30 @@
+/* components/ScrollIndicator.css */
+.scroll-indicator {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  z-index: 1000;
+}
+
+.scroll-icon {
+  font-size: 2rem;
+  color: #4a90e2; /* Cor do ícone */
+  animation: bounce 2s infinite; /* Animação de bounce */
+}
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0); /* Posição inicial */
+  }
+  40% {
+    transform: translateY(-10px); /* Move para cima */
+  }
+  60% {
+    transform: translateY(-5px); /* Move um pouco para cima */
+  }
+}

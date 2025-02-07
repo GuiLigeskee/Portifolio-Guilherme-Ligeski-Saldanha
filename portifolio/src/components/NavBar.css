@@ -1,40 +1,14 @@
 .navBar {
   position: fixed;
   width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #070707;
   color: #fafafa;
-  padding: 1em 2em;
+  padding: 1em 3em;
   z-index: 9999;
   transition: 0.3s;
 }
 
 .navBarLogo a {
-  color: #73c883;
-}
-
-.navBarRight {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.navBarOptions {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.navBarOption a {
-  display: inline-block;
-  margin-left: 10px;
-  padding: 0 0.5em;
-  cursor: pointer;
-  font-weight: 300;
-  color: #73c883;
-  transition: all 3ms;
+  color: #007bff;
 }
 
 @media screen and (max-width: 768px) {

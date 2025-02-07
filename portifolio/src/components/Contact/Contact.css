@@ -3,12 +3,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 25vh;
-  background-color: #000000;
+  height: 40vh;
 }
 
 .contact-title {
-  color: #73c883;
   margin: 0.2em;
 }
 

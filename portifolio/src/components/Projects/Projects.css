@@ -1,48 +1,82 @@
-.projects {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  gap: 20px; /* Espaçamento entre os projetos */
-  width: 80%;
-  margin: 0 auto;
-  padding: 2em 0;
-  transition: all 0.3s ease-in-out;
+.title {
+  text-align: center;
+  color: #fff;
+  margin: 2rem 0;
+  font-size: 2.5rem;
+  background-color: #0a0a0a;
 }
 
 .filter-container {
-  max-width: 400px;
-  margin: 0 auto 20px auto;
+  max-width: 800px;
+  margin: 0 auto 2rem;
+  padding: 0 1rem;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 0 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .no-results {
-  font-size: 18px;
-  font-weight: bold;
-  color: #888;
+  color: #fff;
   text-align: center;
-  width: 100%;
-  padding: 20px;
+  grid-column: 1 / -1;
+  font-size: 1.2rem;
+  margin: 2rem 0;
 }
 
-/* Responsividade */
-@media screen and (max-width: 1024px) {
-  .projects {
-    width: 90%;
-  }
-
-  .filter-container {
-    width: 90%;
-  }
+/* Estilos customizados para o react-select */
+.custom-select {
+  color: #fff !important;
 }
 
-@media screen and (max-width: 768px) {
+.custom-select__control {
+  background: #0a0a0a !important;
+  border: 1px solid #007bff !important;
+  border-radius: 8px !important;
+}
+
+.custom-select__multi-value {
+  background: #007bff !important;
+  color: white !important;
+}
+
+.custom-select__multi-value__label {
+  color: white !important;
+}
+
+.custom-select__menu {
+  background: #3d3d3d !important;
+}
+
+.custom-select__option {
+  background: #3d3d3d !important;
+  color: white !important;
+}
+
+.custom-select__option--is-focused {
+  background: #007bff !important;
+}
+
+.custom-select__indicator-separator {
+  background: #007bff !important;
+}
+
+.custom-select__dropdown-indicator {
+  color: #007bff !important;
+}
+
+@media (max-width: 768px) {
   .projects {
-    width: 100%;
-    padding: 1em;
+    grid-template-columns: 1fr;
+    padding: 0 1rem;
   }
 
-  .filter-container {
-    width: 100%;
-    padding: 0 10px;
+  .title {
+    font-size: 2rem;
   }
 }

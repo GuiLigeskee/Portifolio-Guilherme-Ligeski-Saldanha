@@ -1,5 +1,5 @@
-// ProjectCard.js
 import React from "react";
+import { FaGithub, FaExternalLinkAlt } from "react-icons/fa"; // Ícones do GitHub e link externo
 import "./ProjectCard.css";
 
 const ProjectCard = ({ imgSrc, title, technologies, githubLink, siteLink }) => {
@@ -12,28 +12,28 @@ const ProjectCard = ({ imgSrc, title, technologies, githubLink, siteLink }) => {
           <span>Tecnologias utilizadas no projeto:</span>
           <ul>
             {technologies.map((tech, index) => (
-              <li key={index}>
-                <img src={tech.logo} alt={`${tech.name} Logo`} />
-              </li>
+              <li key={index}>{tech.logo}</li>
             ))}
           </ul>
         </label>
         <div id="buttons">
           <a
-            id="project-link"
+            className="project-link"
             href={githubLink}
             target="_blank"
             rel="noopener noreferrer"
           >
-            Repositório GitHub
+            <FaGithub className="icon" />
+            Repositório
           </a>
           {siteLink && (
             <a
-              id="project-link"
+              className="project-link"
               href={siteLink}
               target="_blank"
               rel="noopener noreferrer"
             >
+              <FaExternalLinkAlt className="icon" />
               Site
             </a>
           )}

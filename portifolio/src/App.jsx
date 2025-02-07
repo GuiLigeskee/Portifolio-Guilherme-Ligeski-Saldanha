@@ -5,21 +5,34 @@ import Contact from "./components/Contact/Contact";
 import Intro from "./components/Intro/Intro";
 import NavBar from "./components/NavBar";
 import Projects from "./components/Projects/Projects";
+import AnimatedSection from "./components/AnimatedSection/AnimatedSection";
+import ScrollIndicator from "./components/ScrollIndicator/ScrollIndicator";
 
 function App() {
   return (
     <>
       <NavBar />
+      <ScrollIndicator />
       <div className="container">
-        <Intro />
+        <AnimatedSection>
+          <Intro />
+        </AnimatedSection>
         <br />
-        <AboutMe />
+        <AnimatedSection>
+          <AboutMe />
+        </AnimatedSection>
         <br />
-        <Acquirements />
+        <AnimatedSection>
+          <Acquirements />
+        </AnimatedSection>
         <br />
-        <Projects />
+        <AnimatedSection>
+          <Projects />
+        </AnimatedSection>
         <br />
-        <Contact />
+        <AnimatedSection>
+          <Contact />
+        </AnimatedSection>
       </div>
     </>
   );

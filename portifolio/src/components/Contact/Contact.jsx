@@ -40,7 +40,7 @@ const Contact = () => {
           <img src={Whatsapp} alt="" />
         </a>
       </div>
-      <p className="copy">Feito por Guiligeskee&copy; 2024</p>
+      <p className="copy">Feito por Guiligeskee&copy; 2025</p>
     </div>
   );
 };

@@ -1,15 +1,20 @@
 import "./Intro.css";
-import DevIntro from "../../assets/dev-intro.svg";
+import TypingEffect from "react-typing-effect";
 import { FaGithub, FaLinkedin, FaDownload } from "react-icons/fa";
+import cv from "../../assets/CV-Guilherme_Ligeski_Saldanha.pdf";
 
 const Intro = () => {
   return (
     <div className="intro" id="intro">
-      <div className="intro-content-left">
-        <img src={DevIntro} alt="" srcset="" />
-      </div>
-      <div className="intro-content-right">
-        <h1 className="title">Olá, eu sou o Guilherme!</h1>
+      <div className="intro-content">
+        <h1 className="title">
+          <TypingEffect
+            text={["Olá eu sou o Guilherme!"]}
+            speed={100}
+            eraseSpeed={50}
+          />
+        </h1>
+
         <p className="subtitle">Desenvolvedor Fullstack</p>
 
         <p className="description">
@@ -22,13 +27,8 @@ const Intro = () => {
           <a href="#projects" className="btn-primary">
             Meus Projetos
           </a>
-          <a
-            href="/CV-Guilherme_Ligeski_Saldanha.pdf"
-            download="CV-Guilherme_Ligeski_Saldanha.pdf"
-            type="application/pdf"
-            className="btn-secondary"
-          >
-            <FaDownload /> Baixar Currículo
+          <a href={cv} download className="btn-secondary">
+            <FaDownload /> Baixar CV
           </a>
         </div>
 

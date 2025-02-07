@@ -12,15 +12,31 @@ import ListaDeTarefas from "../../assets/ListaDeTarefas.webp";
 import CineReview from "../../assets/CineReview.webp";
 import Accounts from "../../assets/accounts.webp";
 
-// Icons
-import JavaScript from "../../assets/javascript-logo.svg";
-import ReactLogo from "../../assets/react-logo.svg";
-import ReduxLogo from "../../assets/redux-logo.svg";
-import NodejsLogo from "../../assets/nodejs-logo.svg";
-import MongodbLogo from "../../assets/mongodb-logo.svg";
-import TypeScript from "../../assets/typescript.svg";
+import {
+  FaCode,
+  FaServer,
+  FaDatabase,
+  FaTools,
+  FaReact,
+  FaNodeJs,
+  FaDocker,
+  FaGitAlt,
+} from "react-icons/fa";
+import {
+  SiRedux,
+  SiTypescript,
+  SiJavascript,
+  SiMongodb,
+  SiMysql,
+  SiDotnet,
+  SiGithub,
+  SiPython,
+} from "react-icons/si";
+import { BsGit } from "react-icons/bs";
 
 const options = [
+  { value: "C#", label: "C#" },
+  { value: "Python", label: "Python" },
   { value: "JavaScript", label: "JavaScript" },
   { value: "TypeScript", label: "TypeScript" },
   { value: "React", label: "React" },
@@ -34,11 +50,11 @@ const projectsData = [
     imgSrc: CasaLuz,
     title: "Projeto freelancer CasaLuz",
     technologies: [
-      { logo: JavaScript, name: "JavaScript" },
-      { logo: ReactLogo, name: "React" },
-      { logo: ReduxLogo, name: "Redux" },
-      { logo: NodejsLogo, name: "Node.js" },
-      { logo: MongodbLogo, name: "MongoDB" },
+      { logo: <SiJavascript />, name: "JavaScript" },
+      { logo: <FaReact />, name: "React" },
+      { logo: <SiRedux />, name: "Redux" },
+      { logo: <FaNodeJs />, name: "Node.js" },
+      { logo: <SiMongodb />, name: "MongoDB" },
     ],
     githubLink: "https://github.com/GuiLigeskee/CasaLuz",
     siteLink: "https://www.casaluzimoveis.com",
@@ -47,11 +63,11 @@ const projectsData = [
     imgSrc: Mademape,
     title: "Projeto freelancer Mademape",
     technologies: [
-      { logo: JavaScript, name: "JavaScript" },
-      { logo: ReactLogo, name: "React" },
-      { logo: ReduxLogo, name: "Redux" },
-      { logo: NodejsLogo, name: "Node.js" },
-      { logo: MongodbLogo, name: "MongoDB" },
+      { logo: <SiJavascript />, name: "JavaScript" },
+      { logo: <FaReact />, name: "React" },
+      { logo: <SiRedux />, name: "Redux" },
+      { logo: <FaNodeJs />, name: "Node.js" },
+      { logo: <SiMongodb />, name: "MongoDB" },
     ],
     githubLink: "https://github.com/GuiLigeskee/MademapeStore",
   },
@@ -59,11 +75,11 @@ const projectsData = [
     imgSrc: GreenSocial,
     title: "Projeto pessoal GreenSocial",
     technologies: [
-      { logo: JavaScript, name: "JavaScript" },
-      { logo: ReactLogo, name: "React" },
-      { logo: ReduxLogo, name: "Redux" },
-      { logo: NodejsLogo, name: "Node.js" },
-      { logo: MongodbLogo, name: "MongoDB" },
+      { logo: <SiJavascript />, name: "JavaScript" },
+      { logo: <FaReact />, name: "React" },
+      { logo: <SiRedux />, name: "Redux" },
+      { logo: <FaNodeJs />, name: "Node.js" },
+      { logo: <SiMongodb />, name: "MongoDB" },
     ],
     githubLink: "https://github.com/GuiLigeskee/MademapeStore",
   },
@@ -71,8 +87,8 @@ const projectsData = [
     imgSrc: CineReview,
     title: "Projeto pessoal CineReview",
     technologies: [
-      { logo: JavaScript, name: "JavaScript" },
-      { logo: ReactLogo, name: "React" },
+      { logo: <SiJavascript />, name: "JavaScript" },
+      { logo: <FaReact />, name: "React" },
     ],
     githubLink: "https://github.com/GuiLigeskee/Lista-de-tarefas",
     siteLink:
@@ -82,8 +98,8 @@ const projectsData = [
     imgSrc: ListaDeTarefas,
     title: "Projeto pessoal Lista de tarefas",
     technologies: [
-      { logo: TypeScript, name: "TypeScript" },
-      { logo: ReactLogo, name: "React" },
+      { logo: <SiTypescript />, name: "TypeScript" },
+      { logo: <FaReact />, name: "React" },
     ],
     githubLink: "https://github.com/GuiLigeskee/Lista-de-tarefas",
     siteLink:
@@ -93,8 +109,8 @@ const projectsData = [
     imgSrc: AdivinheAPalavra,
     title: "Projeto pessoal Adivinhe a palavra",
     technologies: [
-      { logo: JavaScript, name: "JavaScript" },
-      { logo: ReactLogo, name: "React" },
+      { logo: <SiJavascript />, name: "JavaScript" },
+      { logo: <FaReact />, name: "React" },
     ],
     githubLink: "https://github.com/GuiLigeskee/Adivinhe-a-palavra",
     siteLink: "https://GuiLigeskee.github.io/adivinhe-a-palavra",
@@ -103,8 +119,8 @@ const projectsData = [
     imgSrc: Accounts,
     title: "Projeto pessoal Accounts",
     technologies: [
-      { logo: JavaScript, name: "JavaScript" },
-      { logo: NodejsLogo, name: "Node.js" },
+      { logo: <SiJavascript />, name: "JavaScript" },
+      { logo: <FaNodeJs />, name: "Node.js" },
     ],
     githubLink: "https://github.com/GuiLigeskee/Accounts-CLI",
   },
@@ -134,6 +150,60 @@ const Projects = () => {
           isMulti
           onChange={setSelectedLanguages}
           placeholder="Filtrar por linguagens..."
+          className="react-select-container"
+          classNamePrefix="react-select"
+          styles={{
+            control: (provided, state) => ({
+              ...provided,
+              borderRadius: "15px",
+              padding: ".5em",
+              backgroundColor: "#0a0a0a", // Fundo escuro
+              boxShadow: state.isFocused ? "0 0 0 1px #4a90e2" : "none", // Sombra ao focar
+              "&:hover": {
+                borderColor: "#4a90e2", // Borda azul ao passar o mouse
+              },
+            }),
+            menu: (provided) => ({
+              ...provided,
+              backgroundColor: "#0a0a0a",
+            }),
+            option: (provided, state) => ({
+              ...provided,
+              backgroundColor: state.isFocused ? "#4a90e2" : "#3d3d3d", // Fundo azul ao focar
+              color: state.isFocused ? "#fff" : "#fff", // Texto branco
+              "&:active": {
+                backgroundColor: "#357abd", // Fundo azul mais escuro ao clicar
+              },
+            }),
+            multiValue: (provided) => ({
+              ...provided,
+              backgroundColor: "#4a90e2", // Fundo azul para os itens selecionados
+            }),
+            multiValueLabel: (provided) => ({
+              ...provided,
+              color: "#fff", // Texto branco para os itens selecionados
+            }),
+            multiValueRemove: (provided) => ({
+              ...provided,
+              color: "#fff", // Ícone de remover em branco
+              "&:hover": {
+                backgroundColor: "#357abd", // Fundo azul mais escuro ao passar o mouse
+                color: "#fff",
+              },
+            }),
+            input: (provided) => ({
+              ...provided,
+              color: "#fff", // Texto branco no input
+            }),
+            singleValue: (provided) => ({
+              ...provided,
+              color: "#fff", // Texto branco para o valor selecionado
+            }),
+            placeholder: (provided) => ({
+              ...provided,
+              color: "#b0b0b0", // Texto cinza para o placeholder
+            }),
+          }}
         />
       </div>
 
