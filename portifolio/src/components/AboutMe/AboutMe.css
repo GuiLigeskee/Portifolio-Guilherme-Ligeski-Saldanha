@@ -100,3 +100,95 @@
   font-size: 30px;
   color: #007bff;
 }
+
+@media (max-width: 768px) {
+  .aboutMe {
+    padding: 40px 15px;
+  }
+
+  .title {
+    font-size: 1.8rem;
+  }
+
+  .text {
+    font-size: 1rem;
+    max-width: 100%;
+  }
+
+  .skills h2 {
+    font-size: 1.3rem;
+  }
+
+  .skill-list {
+    gap: 8px;
+  }
+
+  .skill-list span {
+    font-size: 0.9rem;
+    padding: 6px 12px;
+  }
+
+  .timeline {
+    max-width: 100%;
+    padding: 0 10px;
+  }
+
+  .timeline h2 {
+    font-size: 1.3rem;
+  }
+
+  .timeline-item {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .timeline-content h3 {
+    font-size: 1.1rem;
+  }
+
+  .timeline-content p {
+    font-size: 0.9rem;
+  }
+
+  .icon {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 1.6rem;
+  }
+
+  .text {
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+
+  .skills h2 {
+    font-size: 1.2rem;
+  }
+
+  .skill-list span {
+    font-size: 0.85rem;
+    padding: 5px 10px;
+  }
+
+  .timeline h2 {
+    font-size: 1.2rem;
+  }
+
+  .timeline-item {
+    padding: 12px;
+    gap: 8px;
+  }
+
+  .timeline-content h3 {
+    font-size: 1rem;
+  }
+
+  .timeline-content p {
+    font-size: 0.85rem;
+  }
+}
