@@ -1,5 +1,5 @@
 import React from "react";
-import { FaGithub, FaExternalLinkAlt } from "react-icons/fa"; // Ícones do GitHub e link externo
+import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 import "./ProjectCard.css";
 
 const ProjectCard = ({ imgSrc, title, technologies, githubLink, siteLink }) => {

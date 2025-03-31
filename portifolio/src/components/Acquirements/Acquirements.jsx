@@ -1,38 +1,3 @@
-// const skills = [
-//   {
-//     category: "Front-end",
-//     icon: <FaCode />,
-//     technologies: [
-//       { name: "JavaScript", icon: <SiJavascript /> },
-//       { name: "TypeScript", icon: <SiTypescript /> },
-//       { name: "React", icon: <FaReact /> },
-//       { name: "Redux", icon: <SiRedux /> },
-//     ],
-//   },
-//   {
-//     category: "Back-end",
-//     icon: <FaDatabase />,
-//     technologies: [
-//       { name: "C#", icon: <i class="devicon-csharp-plain"></i> },
-//       { name: ".NET", icon: <SiDotnet /> },
-//       { name: "Node.js", icon: <FaNodeJs /> },
-//       { name: "MongoDB", icon: <SiMongodb /> },
-//       { name: "MySQL", icon: <SiMysql /> },
-//     ],
-//   },
-//   {
-//     category: "DevOps & Ferramentas",
-//     icon: <FaTools />,
-//     technologies: [
-//       { name: "Git", icon: <SiGit /> },
-//       { name: "Git Flow", icon: <FaGitAlt /> },
-//       { name: "Docker", icon: <FaDocker /> },
-//       { name: "Azure", icon: <i class="devicon-azure-plain"></i> },
-//       { name: "Azure DevOps", icon: <i class="devicon-azuredevops-plain"></i> },
-//     ],
-//   },
-// ];
-
 import "./Acquirements.css";
 import {
   FaCode,
@@ -42,7 +7,6 @@ import {
   FaReact,
   FaNodeJs,
   FaDocker,
-  FaGitAlt,
 } from "react-icons/fa";
 import {
   SiRedux,

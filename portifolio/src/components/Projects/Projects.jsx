@@ -157,10 +157,10 @@ const Projects = () => {
               ...provided,
               borderRadius: "15px",
               padding: ".5em",
-              backgroundColor: "#0a0a0a", // Fundo escuro
-              boxShadow: state.isFocused ? "0 0 0 1px #4a90e2" : "none", // Sombra ao focar
+              backgroundColor: "#0a0a0a",
+              boxShadow: state.isFocused ? "0 0 0 1px #4a90e2" : "none",
               "&:hover": {
-                borderColor: "#4a90e2", // Borda azul ao passar o mouse
+                borderColor: "#4a90e2",
               },
             }),
             menu: (provided) => ({
@@ -169,39 +169,39 @@ const Projects = () => {
             }),
             option: (provided, state) => ({
               ...provided,
-              backgroundColor: state.isFocused ? "#4a90e2" : "#3d3d3d", // Fundo azul ao focar
-              color: state.isFocused ? "#fff" : "#fff", // Texto branco
+              backgroundColor: state.isFocused ? "#4a90e2" : "#3d3d3d",
+              color: state.isFocused ? "#fff" : "#fff",
               "&:active": {
-                backgroundColor: "#357abd", // Fundo azul mais escuro ao clicar
+                backgroundColor: "#357abd",
               },
             }),
             multiValue: (provided) => ({
               ...provided,
-              backgroundColor: "#4a90e2", // Fundo azul para os itens selecionados
+              backgroundColor: "#4a90e2",
             }),
             multiValueLabel: (provided) => ({
               ...provided,
-              color: "#fff", // Texto branco para os itens selecionados
+              color: "#fff",
             }),
             multiValueRemove: (provided) => ({
               ...provided,
-              color: "#fff", // Ícone de remover em branco
+              color: "#fff",
               "&:hover": {
-                backgroundColor: "#357abd", // Fundo azul mais escuro ao passar o mouse
+                backgroundColor: "#357abd",
                 color: "#fff",
               },
             }),
             input: (provided) => ({
               ...provided,
-              color: "#fff", // Texto branco no input
+              color: "#fff",
             }),
             singleValue: (provided) => ({
               ...provided,
-              color: "#fff", // Texto branco para o valor selecionado
+              color: "#fff",
             }),
             placeholder: (provided) => ({
               ...provided,
-              color: "#b0b0b0", // Texto cinza para o placeholder
+              color: "#b0b0b0",
             }),
           }}
         />

@@ -28,15 +28,13 @@
   font-size: 1.3rem;
   opacity: 0.9;
   color: #bbb;
-  margin-bottom: 15px;
+  margin-bottom: 25px;
 }
 
 .description {
   font-size: 1rem;
   opacity: 0.8;
   line-height: 1.5;
-  max-width: 500px;
-  margin-top: 10px;
 }
 
 .buttons {
