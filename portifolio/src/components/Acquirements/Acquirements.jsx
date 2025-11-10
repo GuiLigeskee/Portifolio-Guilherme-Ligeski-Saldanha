@@ -25,48 +25,67 @@ const skills = [
     category: "Linguagens",
     icon: <FaCode />,
     technologies: [
-      { name: "JavaScript", icon: <SiJavascript /> },
+      { name: "JavaScript (ES6+)", icon: <SiJavascript /> },
       { name: "TypeScript", icon: <SiTypescript /> },
-      { name: "C#", icon: <i class="devicon-csharp-plain"></i> },
+      { name: "C#", icon: <i className="devicon-csharp-plain"></i> },
       { name: "Python", icon: <SiPython /> },
     ],
   },
   {
-    category: "Frontend",
+    category: "Frontend & Mobile",
     icon: <FaReact />,
     technologies: [
       { name: "React", icon: <FaReact /> },
+      { name: "React Native", icon: <FaReact /> },
       { name: "Redux", icon: <SiRedux /> },
-      { name: "HTML", icon: <i class="devicon-html5-plain"></i> },
-      { name: "CSS", icon: <i class="devicon-css3-plain"></i> },
+      { name: "HTML/CSS", icon: <i className="devicon-html5-plain"></i> },
+      {
+        name: "Tailwind CSS",
+        icon: <i className="devicon-tailwindcss-plain"></i>,
+      },
     ],
   },
   {
-    category: "Backend",
+    category: "Backend & Frameworks",
     icon: <FaServer />,
     technologies: [
-      { name: ".NET", icon: <SiDotnet /> },
-      { name: "Django", icon: <i class="devicon-django-plain"></i> },
       { name: "Node.js", icon: <FaNodeJs /> },
-      { name: "Express", icon: <i class="devicon-express-original"></i> },
+      { name: "NestJs", icon: <i className="devicon-nestjs-plain"></i> },
+      { name: "Express", icon: <i className="devicon-express-original"></i> },
+      { name: ".NET", icon: <SiDotnet /> },
+      { name: "ASP.NET", icon: <SiDotnet /> },
+      { name: "Django", icon: <i className="devicon-django-plain"></i> },
     ],
   },
   {
     category: "Banco de Dados",
     icon: <FaDatabase />,
     technologies: [
-      { name: "MongoDB", icon: <SiMongodb /> },
+      {
+        name: "SQL (PostgreSQL)",
+        icon: <i className="devicon-postgresql-plain"></i>,
+      },
       { name: "MySQL", icon: <SiMysql /> },
-      { name: "SQLite", icon: <i class="devicon-sqlite-plain"></i> },
+      {
+        name: "SQL Server",
+        icon: <i className="devicon-microsoftsqlserver-plain"></i>,
+      },
+      { name: "SQLite", icon: <i className="devicon-sqlite-plain"></i> },
+      { name: "NoSQL (MongoDB)", icon: <SiMongodb /> },
     ],
   },
   {
-    category: "DevOps",
+    category: "DevOps & Metodologias",
     icon: <FaTools />,
     technologies: [
       { name: "Docker", icon: <FaDocker /> },
-      { name: "Azure", icon: <i class="devicon-azure-plain"></i> },
-      { name: "Azure DevOps", icon: <i class="devicon-azuredevops-plain"></i> },
+      {
+        name: "Azure DevOps",
+        icon: <i className="devicon-azuredevops-plain"></i>,
+      },
+      { name: "SCRUM", icon: <FaTools /> },
+      { name: "SOLID", icon: <FaCode /> },
+      { name: "Git/GitHub Flow", icon: <BsGit /> },
     ],
   },
   {
@@ -75,7 +94,7 @@ const skills = [
     technologies: [
       { name: "Git", icon: <BsGit /> },
       { name: "GitHub", icon: <SiGithub /> },
-      { name: "Figma", icon: <i class="devicon-figma-plain"></i> },
+      { name: "Figma", icon: <i className="devicon-figma-plain"></i> },
     ],
   },
 ];

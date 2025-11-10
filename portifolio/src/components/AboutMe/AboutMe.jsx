@@ -8,10 +8,15 @@ const AboutMe = () => {
       <h1 className="title">Sobre Mim</h1>
       <p className="text">
         Olá, sou <span>Guilherme Ligeski Saldanha</span>, um{" "}
-        <span>desenvolvedor fullstack</span> de <span>20 anos</span>. Estudante
-        de <span>Engenharia de Software</span>, tenho experiência na criação de{" "}
-        <span>APIs e sistemas escaláveis</span>. Atualmente, atuo como{" "}
-        <span>Desenvolvedor Full-Stack e Coordenador de Projetos</span> na Pew's
+        <span>desenvolvedor Full-Stack</span> de <span>21 anos</span>. Estudante
+        de <span>Engenharia de Software</span> na UniBrasil, tenho experiência
+        na criação de{" "}
+        <span>aplicações Front-end/Mobile com React e React Native</span>,
+        implementação de{" "}
+        <span>APIs e automações de Back-end usando Node.js e n8n</span>, e
+        trabalho com{" "}
+        <span>metodologias ágeis (SCRUM, SOLID, Git/GitHub Flow)</span>.
+        Atualmente, atuo como <span>Desenvolvedor Full-Stack</span> na Pew's
         Cavern.
       </p>
 
@@ -28,12 +33,22 @@ const AboutMe = () => {
         <div className="timeline-item">
           <FaBriefcase className="icon" />
           <div className="timeline-content">
-            <h3>Dev. Full-Stack e Coordenador de Projetos</h3>
-            <p>Pew's Cavern (2025 - Presente)</p>
-            <p>
-              Liderança de equipe com SCRUM e desenvolvimento full-stack com
-              React, Node.js e n8n.
-            </p>
+            <h3>Desenvolvedor Full-Stack - Pew's Cavern</h3>
+            <p>Jan 2025 - Set 2025 - Remoto</p>
+            <ul>
+              <li>
+                Participação em equipe de desenvolvimento, atuando com time para
+                o ciclo de vida completo do software
+              </li>
+              <li>
+                Desenvolvimento de aplicações Front-end/Mobile com React, React
+                Native e Tailwind CSS
+              </li>
+              <li>
+                Implementação de APIs e automações no Back-end usando Node.js e
+                n8n, acelerando a prova de conceito e time-to-market
+              </li>
+            </ul>
           </div>
         </div>
 
@@ -41,9 +56,17 @@ const AboutMe = () => {
           <FaBriefcase className="icon" />
           <div className="timeline-content">
             <h3>Freelancer - Casa Luz Imóveis</h3>
-            <p>
-              Criação de site com catálogo de imóveis e painel administrativo.
-            </p>
+            <p>Fev 2024 - Jun 2024 - Curitiba, PR</p>
+            <ul>
+              <li>
+                Criação de site imobiliário Full-Stack com Front-end responsivo
+                e Back-end para gestão de anúncios
+              </li>
+              <li>
+                Implementação de filtros avançados de pesquisa e área
+                administrativa para gerenciar o catálogo de imóveis
+              </li>
+            </ul>
           </div>
         </div>
 
@@ -51,7 +74,18 @@ const AboutMe = () => {
           <FaBriefcase className="icon" />
           <div className="timeline-content">
             <h3>Freelancer - MadeMape Store</h3>
-            <p>Plataforma de árvore de links com personalização de perfil.</p>
+            <p>Ago 2023 - Dez 2023 - Curitiba, PR</p>
+            <ul>
+              <li>
+                Desenvolvimento de plataforma de árvore de links personalizada,
+                permitindo aos usuários centralizar e compartilhar múltiplos
+                links em um único perfil
+              </li>
+              <li>
+                Entrega de solução com interface personalizável, design
+                responsivo e integração com redes sociais
+              </li>
+            </ul>
           </div>
         </div>
       </div>

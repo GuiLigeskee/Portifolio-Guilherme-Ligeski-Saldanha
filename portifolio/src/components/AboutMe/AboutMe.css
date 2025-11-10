@@ -74,7 +74,7 @@
 
 .timeline-item {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 15px;
   margin-bottom: 20px;
   background: #2c2c2c;
@@ -89,11 +89,36 @@
 
 .timeline-content h3 {
   font-size: 1.2rem;
+  margin-bottom: 0.5rem;
 }
 
 .timeline-content p {
   font-size: 1rem;
   opacity: 0.8;
+  margin: 0.3rem 0;
+}
+
+.timeline-content ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 0.8rem;
+  text-align: left;
+}
+
+.timeline-content ul li {
+  font-size: 0.95rem;
+  opacity: 0.85;
+  margin: 0.5rem 0;
+  padding-left: 1.2rem;
+  position: relative;
+}
+
+.timeline-content ul li::before {
+  content: "▸";
+  position: absolute;
+  left: 0;
+  color: #007bff;
+  font-weight: bold;
 }
 
 .icon {

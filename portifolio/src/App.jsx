@@ -7,6 +7,7 @@ import NavBar from "./components/NavBar";
 import Projects from "./components/Projects/Projects";
 import AnimatedSection from "./components/AnimatedSection/AnimatedSection";
 import ScrollIndicator from "./components/ScrollIndicator/ScrollIndicator";
+import Certifications from "./components/Certifications/Certifications";
 
 function App() {
   return (
@@ -29,6 +30,10 @@ function App() {
         <AnimatedSection>
           <Projects />
         </AnimatedSection>
+        {/* <br />
+        <AnimatedSection>
+          <Certifications />
+        </AnimatedSection> */}
         <br />
         <AnimatedSection>
           <Contact />

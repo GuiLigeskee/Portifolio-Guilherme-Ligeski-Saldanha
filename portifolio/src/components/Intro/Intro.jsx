@@ -15,12 +15,14 @@ const Intro = () => {
           />
         </h1>
 
-        <p className="subtitle">Desenvolvedor Fullstack</p>
+        <p className="subtitle">Desenvolvedor Full-Stack</p>
 
         <p className="description">
-          Sou desenvolvedor fullstack, especializado na criação de APIs
-          escaláveis e sistemas robustos. Tenho experiência no desenvolvimento
-          de soluções personalizadas para empresas.
+          Desenvolvedor Full-Stack com experiência em React, React Native,
+          Node.js e .NET. Especializado na criação de APIs escaláveis,
+          automações de Back-end e sistemas robustos. Participação em equipe de
+          desenvolvimento com foco na entrega eficiente de projetos, utilizando
+          metodologias ágeis como SCRUM.
         </p>
 
         <div className="buttons">
